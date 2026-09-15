@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Fauziah</title>
+    <!-- Menghubungkan ke vanila.css -->
+    <link rel="stylesheet" href="vanila.css">
+</head>
+<body>
+
+    <!-- Navigasi Atas -->
+    <header class="navbar">
+        <a href="#" class="logo">Fauziah</a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Content Utama -->
+    <main class="contact-container">
+        <div class="page-title">
+            <h1>Contact</h1>
+            <p>Silakan isi form jika ingin menghubungi saya.</p>
+        </div>
+
+        <!-- Wadah Utama Grid Kontak (Sesuai CSS Kamu) -->
+        <div class="contact">
+            
+            <!-- Kolom Kiri: Informasi -->
+            <div class="contact-info">
+                <h2>Hubungi Saya</h2>
+                <p>Jika ingin bertanya, berdiskusi, atau melakukan kolaborasi proyek, silakan kirim pesan melalui form.</p>
+                
+                <div class="info-detail">
+                    <div class="info-item">
+                        <strong>Email:</strong>
+                        <p>fauziahnurhijah9@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Lokasi:</strong>
+                        <p>Batam, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Form -->
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Alamat Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan alamat email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="kategori">Kategori / Keperluan</label>
+                    <select id="kategori" name="kategori" required>
+                        <option value="" disabled selected>-- Pilih Kategori --</option>
+                        <option value="pertanyaan">Pertanyaan Umum</option>
+                        <option value="kolaborasi">Kolaborasi Proyek</option>
+                        <option value="diskusi">Diskusi / Lainnya</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="pesan">Pesan</label>
+                    <textarea id="pesan" name="pesan" placeholder="Tulis pesan kamu..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Kirim Pesan</button>
+            </form>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Fauziah Nur Hijah</p>
+    </footer>
+
+</body>
+</html>
